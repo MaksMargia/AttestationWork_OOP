@@ -28,8 +28,8 @@
 1. Для запуска приложения необходим Python (рекомендуется версия 3.8 и более).
 2. Шаги для запуска:
     * **Установка Python:** Если у вас нет Python на вашем компьютере, вы можете загрузить его с официального сайта
-      Python (https://www.python.org/downloads/) и установить. Также Рекомендуется загрузить и установить *IDE PyCharm*
-      с официального сайта https://www.jetbrains.com/ru-ru/pycharm/download/?section=windows.
+      Python (https://www.python.org/downloads/) и установить. Также Рекомендуется загрузить и установить *IDE PyCharm
+      Community Edition* с официального сайта https://www.jetbrains.com/ru-ru/pycharm/download/?section=windows.
     * **Установка зависимостей:** После установки Python вам нужно установить некоторые зависимости проекта. Для этого
       откройте терминал (командную строку) и перейдите в каталог проекта. Затем выполните следующую
       команду: `pip install -r requirements.txt`.
