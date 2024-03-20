@@ -3,38 +3,27 @@ from Logger import Logger
 
 
 class UserInterface:
-    """
-        Класс, представляющий пользовательский интерфейс для калькулятора комплексных чисел.
-
+    """ Класс, представляющий пользовательский интерфейс для калькулятора комплексных чисел.
         Attributes:
             calculator (Calculator): Объект калькулятора, который будет использоваться для выполнения операций.
-
         Methods:
             input_complex_number(prompt): Запрашивает у пользователя ввод комплексного числа.
             display_result(result): Отображает результат операции.
-            run(): Запускает интерфейс для взаимодействия с пользователем.
-    """
+            run(): Запускает интерфейс для взаимодействия с пользователем.    """
 
     def __init__(self, calculator):
-        """
-            Инициализирует объект UserInterface.
-
+        """ Инициализирует объект UserInterface.
             Parameters:
-                calculator (Calculator): Объект калькулятора, который будет использоваться для выполнения операций.
-        """
+                calculator (Calculator): Объект калькулятора, который будет использоваться для выполнения операций.        """
         self.calculator = calculator
         self.logger = Logger("calculator_log.txt")
 
     def input_complex_number(self, prompt):
-        """
-            Запрашивает у пользователя ввод комплексного числа.
-
+        """   Запрашивает у пользователя ввод комплексного числа.
             Parameters:
                 prompt (str): Строка, предназначенная для отображения пользователю перед вводом.
-
             Returns:
-                ComplexNumber: Комплексное число, введенное пользователем.
-        """
+                ComplexNumber: Комплексное число, введенное пользователем. """
         print(prompt)
         while True:
             try:
@@ -45,12 +34,9 @@ class UserInterface:
                 print(f'\033[1;31m{ex}\033[0m')
 
     def display_result(self, result):
-        """
-            Отображает результат операции.
-
+        """           Отображает результат операции.
             Parameters:
-                result (ComplexNumber): Результат операции, который нужно отобразить.
-        """
+                result (ComplexNumber): Результат операции, который нужно отобразить.  """
         print(f'\033[1;36m[*] Result:\033[0m {result}')
 
     def run(self):
